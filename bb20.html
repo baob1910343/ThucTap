@@ -17,7 +17,22 @@
         <div class="row">
             <nav class="navbar navbar-expand-lg navbar-light ">
                 <div class="container-fluid">
-                <a class="navbar-brand" href="#">Thứ 6, ngày 13, năm 2023</a>
+                
+                <!-- <a class="navbar-brand" href="#">Thứ 6, ngày 13, năm 2023</a> -->
+                <div class="navbar-brand" id="current-time"></div>
+                <script>
+                  var curDate = new Date();
+                  var curDay = curDate.getDate();
+                  
+                  // Tháng hiện tại
+                  var curMonth = curDate.getMonth() + 1;
+                   
+                  // Năm hiện tại
+                  var curYear = curDate.getFullYear();
+                  
+                  // Gán vào thẻ HTML
+                  document.getElementById('current-time').innerHTML = curDay + "/" + curMonth + "/" + curYear;
+                </script>
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link " href="#">Trang chủ</a>
@@ -59,13 +74,7 @@
             <div>
               <div class="form-group">
                 <label for="exampleFormControlSelect1"><b> ĐƠN VỊ </b></label>
-                <select class="form-control" id="exampleFormControlSelect1">
-                  <option>Chọn đơn vị số 01</option>
-                  <option>Chọn đơn vị số 02</option>
-                  <option>Chọn đơn vị số 03</option>
-                  <option>Chọn đơn vị số 04</option>
-                  <option>Chọn đơn vị số 05</option>
-                </select>
+                <input type="text" class="form-control" placeholder="">
               </div>
             
                 <form>

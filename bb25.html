@@ -15,39 +15,53 @@
             <img src="img/banner bao cao bau cu xanh dam-NK 21-26.png" alt="">
         </div> 
         <div class="row">
-            <nav class="navbar navbar-expand-lg navbar-light ">
-                <div class="container-fluid">
-                <a class="navbar-brand" href="#">Thứ 6, ngày 13, năm 2023</a>
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link " href="#">Trang chủ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Mẫu 01</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Mẫu 03</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Mẫu BB27</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Ban Bầu Cử</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Đại Biểu Ứng Cử</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Tổ Bầu Cử</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Hướng Dẫn Sử Dụng</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div> 
-    </div>
+          <nav class="navbar navbar-expand-lg navbar-light ">
+              <div class="container-fluid">
+              
+              <!-- <a class="navbar-brand" href="#">Thứ 6, ngày 13, năm 2023</a> -->
+              <div class="navbar-brand" id="current-time"></div>
+              <script>
+                var curDate = new Date();
+                var curDay = curDate.getDate();
+                
+                // Tháng hiện tại
+                var curMonth = curDate.getMonth() + 1;
+                 
+                // Năm hiện tại
+                var curYear = curDate.getFullYear();
+                
+                // Gán vào thẻ HTML
+                document.getElementById('current-time').innerHTML = curDay + "/" + curMonth + "/" + curYear;
+              </script>
+                  <ul class="navbar-nav">
+                      <li class="nav-item">
+                          <a class="nav-link " href="#">Trang chủ</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Mẫu 01</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Mẫu 03</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Mẫu BB27</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Ban Bầu Cử</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Đại Biểu Ứng Cử</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Tổ Bầu Cử</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Hướng Dẫn Sử Dụng</a>
+                      </li>
+                  </ul>
+              </div>
+          </nav>
+      </div>
     <div class="container border">
         <div class="row bg-light">
             <h4>NHẬP BIÊN BẢN 20 - BẦU CỬ ĐẠI BIỂU QUỐC HỘI</h4>
@@ -203,7 +217,7 @@
                         </div>
                         <label class="col-sm-2 col-form-label">lượt bầu </label>
                       </div>
-                      <h3>Số phiếu bầu cho mỗi ứng cử</h4>
+                      <h3>Số phiếu bầu cho mỗi ứng cử</h3>
                         <div class="form-group row">
                           <label class="col-sm-2 col-form-label">1 - Ông/bà: </label>
                           <div class="col-sm-2">
